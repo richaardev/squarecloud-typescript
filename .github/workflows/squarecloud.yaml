@@ -25,7 +25,9 @@ jobs:
         run: npm run build
 
       - name: Create .env file
-        run: echo ${{ secrets.ENV_FILE }} > .env
+        environment:
+          ENV_CONTENT: ${{ secrets.ENV_FILE }}
+        run: echo $ENV_CONTENT > .env
 
       - name: Setup Square Cloud
         uses: squarecloudofc/github-action@v2
