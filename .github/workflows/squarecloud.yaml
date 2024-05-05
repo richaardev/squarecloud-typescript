@@ -25,7 +25,7 @@ jobs:
         run: npm run build
 
       - name: Create .env file
-        environment:
+        env:
           ENV_CONTENT: ${{ secrets.ENV_FILE }}
         run: echo $ENV_CONTENT > .env
 
