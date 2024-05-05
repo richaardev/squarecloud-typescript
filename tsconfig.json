@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Default",
+  "compilerOptions": {
+    // Type Checking
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitAny": true,
+    "noUnusedParameters": true,
+    "noImplicitThis": true,
+    "strict": true,
+    // Modules
+    "allowArbitraryExtensions": false,
+    "allowImportingTsExtensions": false,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    // Interop Constraints
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    // Emit
+    "declaration": true,
+    "declarationMap": true,
+    "importHelpers": false,
+    "newLine": "lf",
+    "noEmitHelpers": true,
+    "outDir": "dist",
+    // Language and Environment
+    "lib": [
+      "ESNext",
+      "ESNext.Disposable"
+    ],
+    "target": "ESNext",
+    "useDefineForClassFields": true
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

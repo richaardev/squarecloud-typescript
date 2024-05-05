@@ -1,0 +1,5 @@
+DISPLAY_NAME=EVAL BOT DEV
+MAIN=dist/index.js
+MEMORY=128
+VERSION=recommended
+
